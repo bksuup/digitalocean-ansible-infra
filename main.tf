@@ -13,7 +13,7 @@ provider "digitalocean" {
 
 module "do-dropplet" {
   source   = "./Modules/Droplets"
-  for_each = var.vm-names
-  vm-name  = each.value
+  count    = length(var.vm-names)
+  vm-name  = var.vm-names[count.index]
   ssh_keys = var.ssh-keys
 }
