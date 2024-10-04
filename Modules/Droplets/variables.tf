@@ -23,5 +23,5 @@ variable "DC-region" {
 
 variable "ssh_keys" {
   type        = list(string)
-  description = "SSH-keys to be added to the host at startup"
+  description = "SSH-key to be added to the host at startup"
 }
