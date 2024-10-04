@@ -20,3 +20,8 @@ variable "DC-region" {
   description = "Define the region of the datacenter for the dropplets"
   default     = "ams3"
 }
+
+variable "ssh_keys" {
+  type        = list(string)
+  description = "SSH-keys to be added to the host at startup"
+}

@@ -1,0 +1,1 @@
+vm-names = ["load-balancer", "web-server", "db-server"]
